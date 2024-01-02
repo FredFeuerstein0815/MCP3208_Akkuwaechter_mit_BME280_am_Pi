@@ -1,0 +1,40 @@
+@reboot /bin/sleep 120 && /usr/bin/python3 /home/pi/BME280_Schleife.py
+@reboot /bin/sleep 120 && /usr/bin/python3 /home/pi/bme280_zur_mariadb.py
+@reboot /bin/sleep 120 && /usr/bin/python3 /home/pi/dateien_check.py
+@reboot /bin/sleep 60 && /usr/bin/echo "1" > /dev/shm/relais1_status.txt && /usr/bin/python3 /home/pi/12V.py
+@reboot /bin/sleep 30 && /usr/bin/echo "1" > /dev/shm/relais2_status.txt
+@reboot /bin/sleep 60 && /usr/bin/echo "1" > /dev/shm/relais3_status.txt && /usr/bin/python3 /home/pi/24V.py
+@reboot /bin/sleep 30 && /usr/bin/echo "1" > /dev/shm/relais4_status.txt
+@reboot /bin/sleep 60 && /usr/bin/echo "1" > /dev/shm/relais5_status.txt && /usr/bin/python3 /home/pi/48V.py
+@reboot /bin/sleep 30 && /usr/bin/echo "1" > /dev/shm/relais6_status.txt
+@reboot /bin/sleep 30 && /usr/bin/echo "1" > /dev/shm/relais7_status.txt
+@reboot /bin/sleep 30 && /usr/bin/echo "1" > /dev/shm/relais8_status.txt
+@reboot /bin/sleep 120 && /home/pi/cputemp.sh
+@reboot /usr/bin/cp /home/pi/einschaltspannung_ch7_12V.txt /dev/shm/einschaltspannung_ch7_12V.txt
+@reboot /usr/bin/cp /home/pi/ausschaltspannung_ch7_12V.txt /dev/shm/ausschaltspannung_ch7_12V.txt
+@reboot /usr/bin/cp /home/pi/einschaltspannung_ch5_24V.txt /dev/shm/einschaltspannung_ch5_24V.txt
+@reboot /usr/bin/cp /home/pi/ausschaltspannung_ch5_24V.txt /dev/shm/ausschaltspannung_ch5_24V.txt
+@reboot /usr/bin/cp /home/pi/einschaltspannung_ch6_48V.txt /dev/shm/einschaltspannung_ch6_48V.txt
+@reboot /usr/bin/cp /home/pi/ausschaltspannung_ch6_48V.txt /dev/shm/ausschaltspannung_ch6_48V.txt
+*/30 * * * * /usr/bin/python3 /home/pi/ch0.py
+*/30 * * * * /usr/bin/python3 /home/pi/ch1.py
+*/30 * * * * /usr/bin/python3 /home/pi/12V_zur_mariadb.py
+*/30 * * * * /usr/bin/python3 /home/pi/24V_zur_mariadb.py
+*/30 * * * * /usr/bin/python3 /home/pi/bme280_zur_mariadb.py
+*/15 * * * * /usr/bin/cp /home/pi/intervall_bme280.txt /dev/shm/intervall_bme280.txt
+*/15 * * * * /usr/bin/cp /home/pi/intervall_mcp3208_ch0.txt /dev/shm/intervall_mcp3208_ch0.txt
+*/15 * * * * /usr/bin/cp /home/pi/intervall_mcp3208_ch1.txt /dev/shm/intervall_mcp3208_ch1.txt
+*/15 * * * * /usr/bin/cp /home/pi/intervall_mcp3208_ch2.txt /dev/shm/intervall_mcp3208_ch2.txt
+*/15 * * * * /usr/bin/cp /home/pi/intervall_mcp3208_ch3.txt /dev/shm/intervall_mcp3208_ch3.txt
+*/15 * * * * /usr/bin/cp /home/pi/intervall_mcp3208_ch4.txt /dev/shm/intervall_mcp3208_ch4.txt
+*/15 * * * * /usr/bin/cp /home/pi/intervall_mcp3208_ch5.txt /dev/shm/intervall_mcp3208_ch5.txt
+*/15 * * * * /usr/bin/cp /home/pi/intervall_mcp3208_ch6.txt /dev/shm/intervall_mcp3208_ch6.txt
+*/15 * * * * /usr/bin/cp /home/pi/intervall_mcp3208_ch7.txt /dev/shm/intervall_mcp3208_ch7.txt
+*/15 * * * * /usr/bin/cp /home/pi/einschaltspannung_ch7_12V.txt /dev/shm/einschaltspannung_ch7_12V.txt
+*/15 * * * * /usr/bin/cp /home/pi/ausschaltspannung_ch7_12V.txt /dev/shm/ausschaltspannung_ch7_12V.txt
+*/15 * * * * /usr/bin/cp /home/pi/einschaltspannung_ch5_24V.txt /dev/shm/einschaltspannung_ch5_24V.txt
+*/15 * * * * /usr/bin/cp /home/pi/ausschaltspannung_ch5_24V.txt /dev/shm/ausschaltspannung_ch5_24V.txt
+*/15 * * * * /usr/bin/cp /home/pi/einschaltspannung_ch6_48V.txt /dev/shm/einschaltspannung_ch6_48V.txt
+*/15 * * * * /usr/bin/cp /home/pi/ausschaltspannung_ch6_48V.txt /dev/shm/ausschaltspannung_ch6_48V.txt
+*/30 * * * * /home/pi/cputemp.sh
+* */8 * * * /home/pi/wttr.sh

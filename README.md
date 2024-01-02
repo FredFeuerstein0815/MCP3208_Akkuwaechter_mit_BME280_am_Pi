@@ -8,7 +8,7 @@ Raspberry Pi\
 MCP3208\
 BME280\
 Widerstände\
-Der MCP3208 wird mit den 3,3 Volt des Pi versorgt, deshalb benötigt man für Spannungen über 3,3 Volt an den Kanälen einen Spannungsteiler.
+WICHTIG: Der MCP3208 wird mit den 3,3 Volt des Pi versorgt, deshalb benötigt man für Spannungen über 3,3 Volt an den Kanälen einen Spannungsteiler.
 
 Vorraussetzungen Software:\
 Apache2\

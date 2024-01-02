@@ -7,12 +7,13 @@ Raspberry Pi\
 8-fach-Relaisboard\
 MCP3208\
 BME280\
-Widerstände\
-WICHTIG: Der MCP3208 wird mit den 3,3 Volt des Pi versorgt, deshalb benötigt man für Spannungen über 3,3 Volt an den Kanälen einen Spannungsteiler.
+Widerstände
 
 Vorraussetzungen Software:\
 Apache2\
 MariaDB
+
+WICHTIG: Der MCP3208 wird mit den 3,3 Volt des Pi versorgt, deshalb benötigt man für Spannungen über 3,3 Volt an den Kanälen einen Spannungsteiler.\
 
 ![alt text](https://github.com/FredFeuerstein0815/MCP3208_Akkuwaechter_mit_BME280_am_Pi/blob/main/Screenshot_Pi_Zero.jpg)
 ![alt text](https://github.com/FredFeuerstein0815/MCP3208_Akkuwaechter_mit_BME280_am_Pi/blob/main/akkuspannung_grafana.png)

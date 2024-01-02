@@ -4,6 +4,7 @@ Dargestellt werden die Daten mittels Apache2 und Grafana.
 
 Vorraussetzungen Hardware:\
 Raspberry Pi\
+8-fach-Relaisboard\
 MCP3208\
 BME280\
 Widerstände\

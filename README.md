@@ -7,7 +7,7 @@ Raspberry Pi\
 8-fach-Relaisboard\
 MCP3208\
 BME280\
-Widerstände\
+Widerstände
 
 Vorraussetzungen Software:\
 Apache2\

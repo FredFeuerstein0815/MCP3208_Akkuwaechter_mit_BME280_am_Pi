@@ -15,7 +15,6 @@
 </body>
 <ul class="menu red">
 <li class="current"><a href="index.php" target="_self">Datenanzeige</a></li>
-<li><a href="einstellungen.php" target="_self">Einstellungen</a></li>
 </ul>
 <br><br>
 <font size=6>

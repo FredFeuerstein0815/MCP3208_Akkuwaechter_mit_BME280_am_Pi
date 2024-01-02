@@ -12,4 +12,4 @@ Vorraussetzungen Software:\
 Apache2\
 MariaDB
 
-https://github.com/FredFeuerstein0815/MCP3208_Akkuwaechter_mit_BME280_am_Pi/blob/main/Screenshot_Pi_Zero.jpg?raw=true
+

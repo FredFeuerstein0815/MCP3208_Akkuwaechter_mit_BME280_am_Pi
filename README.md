@@ -12,4 +12,3 @@ Vorraussetzungen Software:\
 Apache2\
 MariaDB
 
-Screenshot_Pi_Zero.jpg

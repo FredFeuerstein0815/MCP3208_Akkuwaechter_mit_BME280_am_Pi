@@ -91,7 +91,6 @@ def main():
             try:
                 with open(AN_AUS_DATEI, "a") as an:
                     an.write(str((datetime.datetime.now().strftime('\n%Y-%m-%d %H:%M:%S' " Strom an bei {:.2f} Volt".format(spannung)))))
-                    time.sleep(intervall)
             except Exception as error:
                 print(error)
             time.sleep(intervall)
